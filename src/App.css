@@ -1,0 +1,65 @@
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.white-space-wrap {
+  white-space: wrap;
+}
+.w-max-content {
+  width: max-content;
+}
+.w-10rem {
+  width: 10rem;
+}
+.w-20rem {
+  width: 20rem;
+}
+.w-70rem {
+  width: 70rem;
+}
+.w-100rem {
+  width: 100rem;
+}
+.h-2rem {
+  height: 2rem;
+}
+.h-7rem {
+  height: 7rem;
+}
+.h-20rem {
+  height: 20rem;
+}
+.h-10rem {
+  height: 10rem;
+}
+.h-40rem {
+  height: 40rem;
+}
+.min-w-10rem {
+  min-width: 10rem;
+}
+.min-w-30rem {
+  min-width: 30rem;
+}
+.mt-10rem {
+  margin-top: 10rem;
+}
+.jumbotron {
+  height: 350px;
+  img {
+    position: absolute;
+    top: 0;
+    left: -1px;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 600px;
+    object-fit: cover;
+  }
+}
+.credit {
+  a {
+    color: #0d6efd73 !important;
+  }
+}
