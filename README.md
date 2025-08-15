@@ -48,3 +48,16 @@ export default tseslint.config({
   },
 })
 ```
+
+## Deployment note
+deployed on render.com (new -> static site)
+
+Since we're using Vite, set up this following:
+- Build Command: npm install; npm run build
+- Publish Directory: 'dist'
+
+Go to Redirects/Rewrites, add rules:
+- Source: /* 
+- Destination: /index.html
+- Action: rewrite
+That rule is to solve common issue with react deployment that unexpectedly return 404 not found.
