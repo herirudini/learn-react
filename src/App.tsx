@@ -17,7 +17,7 @@ const router = createBrowserRouter([
   {
     path: '',
     errorElement: <PageNotFound />,
-    element: <Navigate to="/signin" />
+    element: <Navigate to="/home" />
   },
   {
     path: '',
