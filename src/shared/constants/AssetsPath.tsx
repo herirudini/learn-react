@@ -1,4 +1,4 @@
 export const ImagePath = {
-  REACT_LOGO: 'src/assets/react.svg',
-  JUMBOTRON: 'src/assets/images/home-banner.jpg'
+  REACT_LOGO: '/assets/react.svg',
+  JUMBOTRON: '/assets/images/home-banner.jpg'
 }
