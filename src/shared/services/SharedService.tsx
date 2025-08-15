@@ -25,7 +25,7 @@ export function useMovies(search: string = 'indonesia', year: string = '', page:
 }
 
 export async function fetchMovies(query: string = 'indonesia', year: string = '', page: string = ''): Promise<OMDB_S<Movie>> {
-  const apiUrl = `http://www.omdbapi.com/?apikey=${LocalEnv.OMDB_API_KEY}&s=${query}&page=${page}&y=${year}`;
+  const apiUrl = `https://www.omdbapi.com/?apikey=${LocalEnv.OMDB_API_KEY}&s=${query}&page=${page}&y=${year}`;
 
   try {
     const response = await fetch(apiUrl);
