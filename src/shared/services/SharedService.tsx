@@ -11,7 +11,7 @@ export function useMovies(search: string = 'indonesia', year: string = '', page:
     queryKey: [search, year, page], // if the search:string value changed then the http request will happen because we put search in the array, the etc:string changes will not cause anything
     queryFn: () =>
       axios
-        .get<OMDB_S<Movie>>(`http://www.omdbapi.com/?apikey=${LocalEnv.OMDB_API_KEY}&s=${search}&page=${page}&y=${year}`)
+        .get<OMDB_S<Movie>>(`https://www.omdbapi.com/?apikey=${LocalEnv.OMDB_API_KEY}&s=${search}&page=${page}&y=${year}`)
         .then(
           (res) => {
             return res
@@ -42,7 +42,7 @@ export async function fetchMovies(query: string = 'indonesia', year: string = ''
 }
 
 export async function fetchMovieDetail(imdbID: string = 'indonesia', plot: string = 'full'): Promise<MovieDetail> {
-  const apiUrl = `http://www.omdbapi.com/?apikey=${LocalEnv.OMDB_API_KEY}&i=${imdbID}&plot=${plot}&r=json`;
+  const apiUrl = `https://www.omdbapi.com/?apikey=${LocalEnv.OMDB_API_KEY}&i=${imdbID}&plot=${plot}&r=json`;
 
   try {
     const response = await fetch(apiUrl);
