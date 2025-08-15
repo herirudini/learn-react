@@ -42,7 +42,7 @@ export default function SigninPage() {
                 <div className="d-flex flex-row justify-content-between mb-3">
                   <label htmlFor="inputPassword" className="col-form-label">Password</label>
                   <div className="col-9">
-                    <PasswordInput id='inputPassword' name='password' defaultValue="" errors={errors} placeholder='Password' register={register} />
+                    <PasswordInput id='inputPassword' name='password' defaultValue="1234" errors={errors} placeholder='Password' register={register} />
                     <p className='invalid-feedback d-block'>{errors.password?.message}</p>
                   </div>
                 </div>
