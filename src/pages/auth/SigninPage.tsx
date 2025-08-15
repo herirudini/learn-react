@@ -3,7 +3,6 @@ import CardComponent from '../../shared/components/CardComponent';
 import { useForm, SubmitHandler } from "react-hook-form"
 import { signinSchema, SigninSchema } from '../../shared/utils/user-schema';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { useState } from 'react';
 import PasswordInput from '../../shared/components/FormInputs/PasswordInput';
 
 export default function SigninPage() {

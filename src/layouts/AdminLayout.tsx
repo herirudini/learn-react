@@ -70,6 +70,8 @@ export default function AdminLayout() {
     );
   }
 
+  if (error) return (<div>{error}</div>)
+
   return (
     <>
       <CartModal

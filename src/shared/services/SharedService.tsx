@@ -6,7 +6,7 @@ import { LocalEnv } from '../../env/localenv';
 import axios from 'axios';
 import { useQuery } from '@tanstack/react-query';
 
-export function useMovies(search: string = 'indonesia', year: string = '', page: string = '', etc: string = '') {
+export function useMovies(search: string = 'indonesia', year: string = '', page: string = '', _: string = '') {
   return useQuery({
     queryKey: [search, year, page], // if the search:string value changed then the http request will happen because we put search in the array, the etc:string changes will not cause anything
     queryFn: () =>

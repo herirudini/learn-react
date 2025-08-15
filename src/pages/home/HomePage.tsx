@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button } from 'react-bootstrap';
 import { faEye } from '@fortawesome/free-regular-svg-icons';
-import { faCartPlus, faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
 import { extractNumbers } from '../../shared/utils/helper';
 import { CartContext } from '../../shared/states/CartContext';
 
@@ -17,7 +17,7 @@ export default function HomePage() {
   const [movies, setMovies] = useState<Movie[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
-  const [keyword, setKeyword] = useState<string>(DEFAULT_SEARCH_KEYWORD);
+  const [keyword, _setKeyword] = useState<string>(DEFAULT_SEARCH_KEYWORD);
   const navigate = useNavigate();
 
   const fetchMoviesData = async (keyword: string) => {
