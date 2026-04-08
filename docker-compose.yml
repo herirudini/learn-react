@@ -1,0 +1,8 @@
+services:
+  app:
+    image: ghcr.io/${GITHUB_REPOSITORY_OWNER}/learn-react:latest
+    ports:
+      - "3000:80"
+    restart: always
+
+# On your server, Cloudflare Tunnel should point to localhost:3000
